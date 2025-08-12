@@ -19,6 +19,8 @@ Bottom up:
 Top Down:
 `Sport -> Football -> World Cup`
 
+Another good reference is Google's content categories. [See here.](https://cloud.google.com/natural-language/docs/categories#categories_version_2)
+
 ## Task Requirements
 
 The technology stack choice is entirely up to you. We have offered some suggestions and tips in the below sections and this is all that they are :)
