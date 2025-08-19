@@ -14,9 +14,9 @@ const CategoryList = ({ categories, refreshCategories }) => {
   const handleSetParent = async () => {
     for (const catId of selected) {
       await axios.post(
-        `http://localhost:8000/categories/${catId}/set-parent?parent_id=${
-          parentId || ""
-        }`
+        `${
+          process.env.REACT_APP_API_URL
+        }/categories/${catId}/set-parent?parent_id=${parentId || ""}`
       );
     }
     setSelected([]);
