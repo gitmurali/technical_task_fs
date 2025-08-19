@@ -5,12 +5,12 @@ import { fetchCategories } from "./api/categories";
 function App() {
   const [categories, setCategories] = useState([]);
 
-  useEffect(() => {
-    const fetchCategoriesList = async () => {
-      const res = await fetchCategories();
-      setCategories(res);
-    };
+  const fetchCategoriesList = async () => {
+    const res = await fetchCategories();
+    setCategories(res);
+  };
 
+  useEffect(() => {
     fetchCategoriesList();
   }, []);
 
@@ -18,7 +18,7 @@ function App() {
     <div>
       <CategoryList
         categories={categories}
-        refreshCategories={fetchCategories}
+        refreshCategories={fetchCategoriesList}
       />
     </div>
   );
