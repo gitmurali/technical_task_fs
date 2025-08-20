@@ -2,6 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 
+# should be moved to env vars
 DATABASE_URL = os.getenv(
     "DATABASE_URL", "postgresql://developer:devpassword@postgres/categories_db")
 
