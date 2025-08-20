@@ -13,3 +13,11 @@ goto
 ```
 http://localhost:3000
 ```
+
+## To remove the containers
+
+run
+
+```
+docker-compose down
+```
