@@ -20,7 +20,7 @@ You are a React developer. Build a Category Parent Selector component with the f
 	•	When a category is selected (via checkbox), the dropdown should allow choosing a different category as its parent.
 	•	Prevent selecting itself as its own parent
 	•	Optionally prevent choosing a descendant as parent (to avoid cycles).
-	•	On parent selection change, call PUT /categories/set-parent/:id with { parentId }.
+	•	On parent selection change, call PUT /categories/:id/set-parent with { parentId }.
 	•	Show success/error feedback; optimistically update UI on success.
 	•	State
 	•	Keep state for:
